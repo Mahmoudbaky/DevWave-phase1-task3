@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- stylesheet link -->
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <link href="./css/output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- stylesheet link -->
+    <link href="./css/output.css" rel="stylesheet" />
   </head>
   <body>
     <!--Navbar  -->
@@ -28,30 +27,38 @@
           <i class="fa-solid fa-film text-2xl"></i>
           <span class="font-bold text-2xl">Movies</span>
         </a>
-        <ul class="flex flex-row gap-16">
+
+        <ul class="hidden md:flex md:flex-row md:gap-16">
           <li>
             <a
-              class="text-lg font-medium text-[#ff2c1f] border-b-2 border-[#ff2c1f] pb-1"
+              class="text-lg underline-grow font-medium text-[#ff2c1f] pb-1"
               href="#home"
               >Home</a
             >
           </li>
           <li>
-            <a class="text-lg font-medium text-[#ff2c1f]" href="#movies"
+            <a
+              class="text-lg underline-grow font-medium text-[#ff2c1f] pb-1"
+              href="#movies"
               >Movies</a
             >
           </li>
           <li>
-            <a class="text-lg font-medium text-[#ff2c1f]" href="#coming soon"
+            <a
+              class="text-lg underline-grow font-medium text-[#ff2c1f] pb-1"
+              href="#coming-soon"
               >Coming Soon</a
             >
           </li>
           <li>
-            <a class="text-lg font-medium text-[#ff2c1f]" href="#newsletter"
+            <a
+              class="text-lg underline-grow font-medium text-[#ff2c1f] pb-1"
+              href="#newsletter"
               >Newsletter</a
             >
           </li>
         </ul>
+
         <a
           href="#"
           class="bg-[#ff2c1f] text-white px-8 py-2 rounded-xl font-bold shadow-lg hover:bg-[#e6261b] transition-colors duration-200"
@@ -80,7 +87,7 @@
           Far From Home
         </h1>
         <button
-          class="bg-[#ff2c1f] text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-[#e6261b] transition-colors duration-200 w-fit"
+          class="bg-[#ff2c1f] text-white px-8 py-4 cursor-pointer rounded-xl font-bold text-lg shadow-lg hover:bg-[#e6261b] transition-colors duration-200 w-fit"
         >
           Book Now
         </button>
@@ -91,7 +98,7 @@
     <div style="height: 4px; background-color: #ff2c1f; width: 100%"></div>
 
     <!-- opening this week -->
-    <section class="bg-black py-20">
+    <section id="movies" class="bg-black py-20">
       <div class="container mx-auto">
         <h2 class="text-[1.5rem] text-[#fff] font-bold">OPENING THIS WEEK</h2>
         <div style="height: 4px; background-color: #ff2c1f; width: 100%"></div>
@@ -104,9 +111,9 @@
     </section>
 
     <!-- coming soon -->
-    <section class="bg-black py-20">
+    <section id="coming-soon" class="bg-black py-20">
       <div class="container mx-auto">
-        <h2 class="text-[1.5rem] text-[#fff] font-bold">OPENING THIS WEEK</h2>
+        <h2 class="text-[1.5rem] text-[#fff] font-bold">COMING SOON</h2>
         <div style="height: 4px; background-color: #ff2c1f; width: 100%"></div>
       </div>
 
@@ -116,7 +123,7 @@
       ></div>
     </section>
     <!-- newsletter -->
-    <section class="bg-black py-10">
+    <section id="newsletter" class="bg-black py-10">
       <div class="container flex flex-col items-center mx-auto">
         <div class="subscribe d-flex flex-column gap-4">
           <h2 class="text-[#fff] text-[2rem] text-center mb-4">
