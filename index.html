@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies App</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- stylesheet link -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link href="./css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navbar  -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-20 bg-transparent">
+      <div
+        class="container mx-auto flex flex-row justify-between items-center py-6"
+      >
+        <a href="#home" class="logo flex items-center gap-2 text-[#ff2c1f]">
+          <i class="fa-solid fa-film text-2xl"></i>
+          <span class="font-bold text-2xl">Movies</span>
+        </a>
+        <ul class="flex flex-row gap-16">
+          <li>
+            <a
+              class="text-lg font-medium text-[#ff2c1f] border-b-2 border-[#ff2c1f] pb-1"
+              href="#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="text-lg font-medium text-[#ff2c1f]" href="#movies"
+              >Movies</a
+            >
+          </li>
+          <li>
+            <a class="text-lg font-medium text-[#ff2c1f]" href="#coming soon"
+              >Coming Soon</a
+            >
+          </li>
+          <li>
+            <a class="text-lg font-medium text-[#ff2c1f]" href="#newsletter"
+              >Newsletter</a
+            >
+          </li>
+        </ul>
+        <a
+          href="#"
+          class="bg-[#ff2c1f] text-white px-8 py-2 rounded-xl font-bold shadow-lg hover:bg-[#e6261b] transition-colors duration-200"
+          >Sign In</a
+        >
+      </div>
+    </header>
+    <!-- end navbar -->
+
+    <!-- Hero -->
+    <section
+      id="home"
+      class="hero relative h-[100vh] flex items-center justify-center"
+      style="
+        background: url('./assets/images/home3.jpg') center center/cover
+          no-repeat;
+      "
+    >
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div
+        class="container mx-auto relative z-10 flex flex-col justify-center h-full"
+      >
+        <span class="text-white text-xl font-light mb-4">Marvel Universe</span>
+        <h1 class="text-white font-bold text-[7vw] leading-tight mb-8">
+          Spider-Man <br />
+          Far From Home
+        </h1>
+        <button
+          class="bg-[#ff2c1f] text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-[#e6261b] transition-colors duration-200 w-fit"
+        >
+          Book Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Separator -->
+    <div style="height: 4px; background-color: #ff2c1f; width: 100%"></div>
+
+    <!-- opening this week -->
+    <section class="bg-black py-20">
+      <div class="container mx-auto">
+        <h2 class="text-[1.5rem] text-[#fff] font-bold">OPENING THIS WEEK</h2>
+        <div style="height: 4px; background-color: #ff2c1f; width: 100%"></div>
+      </div>
+
+      <div
+        id="moviesContainer"
+        class="container mx-auto mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
+      ></div>
+    </section>
+
+    <!-- coming soon -->
+    <section class="bg-black py-20">
+      <div class="container mx-auto">
+        <h2 class="text-[1.5rem] text-[#fff] font-bold">OPENING THIS WEEK</h2>
+        <div style="height: 4px; background-color: #ff2c1f; width: 100%"></div>
+      </div>
+
+      <div
+        id="comingSoonContainer"
+        class="container mx-auto mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
+      ></div>
+    </section>
+    <!-- newsletter -->
+    <section class="bg-black py-10">
+      <div class="container flex flex-col items-center mx-auto">
+        <div class="subscribe d-flex flex-column gap-4">
+          <h2 class="text-[#fff] text-[2rem] text-center mb-4">
+            Subscribe To Get <br />
+            Newsletter
+          </h2>
+          <form>
+            <div class="flex items-center bg-white rounded-xl px-4 py-2 gap-2">
+              <input
+                type="email"
+                class="flex-1 bg-transparent border-0 text-gray-600 text-lg focus:outline-none"
+                placeholder="Enter Email ..."
+                aria-label="Enter Email ..."
+                aria-describedby="basic-addon2"
+              />
+              <button
+                type="submit"
+                class="bg-[#ff2c1f] text-white uppercase font-bold py-2 px-6 rounded-xl text-base focus:outline-none hover:bg-[#e6261b] transition-colors duration-200"
+                id="basic-addon2"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black py-10">
+      <div class="container flex justify-between items-center mx-auto">
+        <a href="#home" class="logo text-[1.25rem] text-[#ff2c1f]">
+          <i class="fa-solid fa-film"></i>
+          <span class="font-bold text-[1.25rem] text-[#fff]">Movies</span>
+        </a>
+        <div class="flex gap-6 items-center">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="rounded-full bg-[#fff] p-3 flex items-center justify-center"
+            style="width: 60px; height: 60px"
+          >
+            <i class="fa-brands fa-facebook-f text-[#ff2c1f] text-3xl"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="rounded-full bg-[#fff] p-3 flex items-center justify-center"
+            style="width: 60px; height: 60px"
+          >
+            <i class="fa-brands fa-instagram text-[#ff2c1f] text-3xl"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="rounded-full bg-[#fff] p-3 flex items-center justify-center"
+            style="width: 60px; height: 60px"
+          >
+            <i class="fa-brands fa-twitter text-[#ff2c1f] text-3xl"></i>
+          </a>
+          <a
+            href="https://tiktok.com"
+            target="_blank"
+            class="rounded-full bg-[#fff] p-3 flex items-center justify-center"
+            style="width: 60px; height: 60px"
+          >
+            <i class="fa-brands fa-tiktok text-[#ff2c1f] text-3xl"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- copyrights -->
+    <footer class="bg-black py-10">
+      <div class="container mx-auto">
+        <p class="text-center text-[#fff] capitalize m-0">
+          © <span class="text-[#ff2c1f]">dev wave</span>
+          all right reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- copyrights -->
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
